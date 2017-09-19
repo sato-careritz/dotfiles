@@ -1,0 +1,29 @@
+# Encoding
+defkanji utf-8
+defencoding utf-8
+encoding utf-8 utf-8
+
+# Prefix Key
+escape ^Jj
+
+# Set Scrollback
+defscrollback 10000000
+
+# Delete Start Up Screen
+startup_message off
+
+# Enable Auto Detach
+autodetach on
+
+# Logging
+log on
+deflog on
+logfile \"/Users/satoem/screen/log/screen-%Y%m%d-%n.log\"
+
+# Show Date and Screen List
+hardstatus alwayslastline '%{= kw}%02c:%s %{= .y}%H %L=%{= .b}%-w%46>%{= .r}%n %t*%{= .b}%+w%-16=%{= .y}[%l]'
+
+# Enable scrolling
+termcapinfo xterm* ti@:te@
+defscrollback 100000
+
