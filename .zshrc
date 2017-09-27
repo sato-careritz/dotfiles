@@ -35,6 +35,7 @@ alias updatedb="sudo /usr/libexec/locate.updatedb"
 alias chrome-c="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 alias gitf="git-foresta"
 alias search="find ./ -type f -print | xargs grep "
+alias jpt="nohup jupyter notebook >> jupyter.log 2>&1 &"
 
 # eval
 if
