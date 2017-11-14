@@ -5,7 +5,7 @@ SAVEHIST=1000
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/Users/satoem/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 # completion settings
 autoload -Uz compinit
@@ -31,12 +31,18 @@ alias vi="vim"
 alias rm="rm -i"
 alias mv="mv -i"
 alias cp="cp -i"
+alias clear="$HOME/.pyenv/versions/anaconda3-4.4.0/envs/py27/bin/clear"
 alias updatedb="sudo /usr/libexec/locate.updatedb"
 alias chrome-c="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 alias gitf="git-foresta"
 alias search="find ./ -type f -print | xargs grep "
 alias jpt="nohup jupyter notebook >> jupyter.log 2>&1 &"
 alias relogin="exec $SHELL -l"
+
+function rmcache() {
+    rm -f $HOME/git/hip/development/php/homepro/fuel/app/tmp/Smarty/templates_c/*
+    rm -f $HOME/git/hip/development/php/homepro/fuel/app/cache/*
+}
 
 # eval
 if
